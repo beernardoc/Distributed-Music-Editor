@@ -1,9 +1,13 @@
 
-# CD 2023 Project
+# CD 2023 Project - Distributed Music Editor
 
 Bernardo Pinto - 105926
 
 João Santos - 110555
+
+## Introduction
+
+The system aims not only to remove vocals from songs but also allows users to eliminate individual instruments, empowering musicians to replace original performances with their own, as commonly seen in karaoke. The objective is to create a web portal that enables musicians to upload their files, analyze instruments, select specific ones, and receive a new file containing only the chosen instruments. Leveraging parallel processing, our system distributes tasks among multiple independent workers, ensuring quick instrument identification and efficient file creation for an enhanced user experience.
 
 [Here](GuiaoProjeto.pdf) is a guide to getting started with the job.
 
