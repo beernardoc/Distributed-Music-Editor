@@ -11,16 +11,3 @@ done
 
 x-terminal-emulator -e python3 server.py 
 
-sleep 5
-
-curl -F music_file=@'test.mp3' http://localhost:5000/music
-
-sleep 5
-
-curl http://localhost:5000/music
-
-
-sleep 5
-
-curl -X POST -F "id=1" -F "vocals=vocals" -F "drums=drums" http://localhost:5000/music/1
-
