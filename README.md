@@ -22,33 +22,7 @@ this library uses a deep learning model to separate the tracks.
 This library requires [ffmpeg](https://ffmpeg.org/) to work.
 It should be present in most Linux distributions.
 
-## Dependencies
-
-For Ubuntu (and other debian based linux), run the following commands:
-
-```bash
-sudo apt install ffmpeg
-```
-
-## Setup
-
-Run the following commands to setup the environement:
-```bash
-mkdir tracks
-
-python3 -m venv venv
-source venv/bin/activate
-
-pip install pip --upgrade
-pip install -r requirements_torch.txt
-pip install -r requirements_demucs.txt
-```
-
-It is important to install the requirements following the previous instructions.
-By default, PyTorch will install the CUDA version of the library (over 4G simple from the virtual environment).
-As such, the current instructions force the installation of the CPU version of PyTorch and then installs Demucs.
-
-## Test
+## Example
 
 This serves as an illustration of how to execute the program.
 
@@ -98,6 +72,36 @@ http://localhost:5000/music/1?id=1
 - [drums](static/tracks/1_drums.mp3)
 - [final (vocals + drums)](static/tracks/1_final.mp3)
 
+
+
+
+
+
+## Dependencies
+
+For Ubuntu (and other debian based linux), run the following commands:
+
+```bash
+sudo apt install ffmpeg
+```
+
+## Setup
+
+Run the following commands to setup the environement:
+```bash
+mkdir tracks
+
+python3 -m venv venv
+source venv/bin/activate
+
+pip install pip --upgrade
+pip install -r requirements_torch.txt
+pip install -r requirements_demucs.txt
+```
+
+It is important to install the requirements following the previous instructions.
+By default, PyTorch will install the CUDA version of the library (over 4G simple from the virtual environment).
+As such, the current instructions force the installation of the CPU version of PyTorch and then installs Demucs.
 
 
 ## Usage
